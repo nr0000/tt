@@ -1,0 +1,35 @@
+spring:
+  profiles:
+    active: prod
+
+---
+spring.profiles: test
+
+server:
+  port: 8082
+
+myprops:
+  env: test
+---
+spring.profiles: dev
+
+server:
+  port: 8083
+
+myprops:
+  env: dev
+
+---
+spring.profiles: prod
+
+server:
+  port: 8084
+
+myprops:
+  env: prod
+
+
+
+
+
+
