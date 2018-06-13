@@ -25,6 +25,11 @@ public class Hello {
         return localDateTime.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME);
     }
 
+    @RequestMapping("version")
+    public String getVersion() {
+        return "1.0";
+    }
+
     @RequestMapping("env")
     public String getEnv() {
         return myconfig.getEnv();
