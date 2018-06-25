@@ -27,7 +27,7 @@ public class Hello {
 
     @RequestMapping("version")
     public String getVersion() {
-        return "2.0";
+        return "2.1";
     }
 
     @RequestMapping("env")
